@@ -4,11 +4,12 @@ const express = require ('express');
 const mongoose = require('mongoose');
 
 
+
 require('dotenv').config();
 
 const app = express();
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 5000;
 
 
 app.use(cors());
@@ -25,6 +26,14 @@ const connection = mongoose.connection;
 connection.once('open',() => {
     console.log("MongoDB database connection established");
 })
+
+
+const userRoutes = require('./routes/users');
+const exceriseRoutes = require('./routes/exercises');
+
+
+app.use('/users',userRoutes);
+app.use('/excerises', exceriseRoutes);
 
 
 
