@@ -13,7 +13,7 @@ class Navbar extends Component{
 
     return( 
         <nav className="navbar navbar-dark bg-dark navbar-expand lg">
-          <Link to="/" className="nav-link">Exercises</Link>
+          <Link to="/" className="nav-link">ExerTracker</Link>
           <div className="collapse navbar-collapse">
         <ul className="navbar-nav mr-auto">
          <li className="navbar-item">
