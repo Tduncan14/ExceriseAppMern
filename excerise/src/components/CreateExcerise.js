@@ -151,7 +151,7 @@ export default class CreateExercise extends Component {
         </div>
 
         <div className="form-group">
-          <input type="submit" value="Create Exercise Log" className="btn btn-primary" />
+          <input type="submit" value="Create Exercise Log" className="btn btn-primary" onClick={this.onSubmit}/>
         </div>
       </form>
     </div>
