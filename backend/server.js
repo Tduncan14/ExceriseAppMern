@@ -33,7 +33,7 @@ const exceriseRoutes = require('./routes/exercises');
 
 
 app.use('/users',userRoutes);
-app.use('/excerises', exceriseRoutes);
+app.use('/exercises', exceriseRoutes);
 
 
 

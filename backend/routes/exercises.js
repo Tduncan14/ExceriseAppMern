@@ -5,7 +5,7 @@ let Exercise = require('../models/excerise.model');
 
 router.route('/').get((req,res) =>{
     Exercise.find()
-    .then(excerises => res.json(exercises))
+    .then(excerises => res.json(excerises))
     .catch(err => res.status(400).json('Error: ' + err));
 })
 
@@ -19,7 +19,7 @@ router.route('/add').post((req,res) =>{
  const date = Date.parse(req.body.date);
 
 
- const newExcerise = new Excerise({
+ const newExcerise = new Exercise({
 
     username,
     description,
